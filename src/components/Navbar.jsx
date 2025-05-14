@@ -25,9 +25,17 @@ const Navbar = () => {
           <Link to="/about">
             <div className="cursor-pointer hover:text-[#016DE9]">About</div>
           </Link>
-          <div className="cursor-pointer hover:text-[#016DE9]">Solutions</div>
-          <div className="cursor-pointer hover:text-[#016DE9]">Careers</div>
-          <div className="cursor-pointer hover:text-[#016DE9]">Blogs</div>
+          <Link to="/solutions">
+            <div className="cursor-pointer hover:text-[#016DE9]">Solutions</div>
+          </Link>
+          <Link to="/careers">
+            {" "}
+            <div className="cursor-pointer hover:text-[#016DE9]">Careers</div>
+          </Link>
+          <Link to="/blogs">
+            {" "}
+            <div className="cursor-pointer hover:text-[#016DE9]">Blogs</div>
+          </Link>
 
           <Link to="/contact">
             <div className="cursor-pointer hover:text-[#016DE9]">Contact</div>
