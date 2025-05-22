@@ -1,13 +1,11 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+
 
 const Contactpage = () => {
   return (
     <>
-      <Navbar />
-      <div className="font-[Urbanist] flex flex-col items-center justify-start w-full min-h-screen pt-[15vh] px-4 sm:px-6 md:px-8">
-        <h1 className="text-4xl mb-10 ">Contact Us</h1>
+      <div className="font-[Urbanist] flex flex-col items-center justify-start w-full min-h-screen pt-[20vh] px-4 sm:px-6 md:px-8">
+        <h1 className="text-6xl sm:text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-gray-800 to-blue-800 font-bold mb-8 pt-8">Contact Us</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Contact Form */}
@@ -16,21 +14,21 @@ const Contactpage = () => {
               <input
                 type="text"
                 placeholder="Name"
-                className="border border-gray-300 p-3 rounded-md w-full"
+                className="border border-blue-800 p-3 rounded-md w-full"
               />
               <input
                 type="email"
                 placeholder="Email"
-                className="border border-gray-300 p-3 rounded-md w-full"
+                className="border border-blue-800 p-3 rounded-md w-full"
               />
             </div>
             <textarea
               placeholder="Message"
-              className="border border-gray-300 p-3 rounded-md w-full h-40 resize-none"
+              className="border border-blue-800 p-3 rounded-md w-full h-40 resize-none"
             ></textarea>
             <button
               type="submit"
-              className="bg-[#016DE9] font-bold text-white px-6 py-3 rounded-md hover:bg-gray-800 transition duration-200"
+              className="bg-blue-800 font-bold text-white px-6 py-3 rounded-md hover:bg-gray-800 transition duration-200"
             >
               Send Message
             </button>
@@ -45,7 +43,6 @@ const Contactpage = () => {
             />
           </div>
         </div>
-        <Footer />
       </div>
 
     </>

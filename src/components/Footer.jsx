@@ -3,7 +3,8 @@ import { FaXTwitter, FaInstagram, FaYoutube } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-gray-100 rounded-2xl text-gray-800 py-6 font-[Urbanist]  my-10 px-4 md:px-16 border border-gray-300">
+<footer className="w-full bg-white rounded-2xl text-gray-800 py-9 font-[Urbanist] mt-10 px-4 md:px-16 border-t-4 border-blue-900 h-[38vh]">
+
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
         {/* Left Section */}
         <div>
@@ -19,18 +20,18 @@ const Footer = () => {
 </p>
           </div>
           <div className="flex space-x-4 text-xl mt-2">
-            <FaXTwitter />
-            <FaInstagram />
-            <FaYoutube />
+            <FaXTwitter className="text-black hover:text-blue-800"/>
+            <FaInstagram className="text-red-500 hover:text-blue-800" />
+            <FaYoutube className="text-red-600 hover:text-blue-800"/>
           </div>
         </div>
 
         {/* Right Section */}
         <div className="flex space-x-6 text-sm self-end md:self-auto">
-          <a href="#home" className="hover:underline">Home</a>
-          <a href="#about" className="hover:underline">About</a>
-          <a href="#projects" className="hover:underline">Projects</a>
-          <a href="#contact" className="hover:underline">Contact</a>
+          <a href="#home" className="hover:underline hover:text-blue-800">Home</a>
+          <a href="#about" className="hover:underline hover:text-blue-800">About</a>
+          <a href="#projects" className="hover:underline hover:text-blue-800">Projects</a>
+          <a href="#contact" className="hover:underline hover:text-blue-800">Contact</a>
         </div>
       </div>
     </footer>
