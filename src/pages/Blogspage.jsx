@@ -5,8 +5,11 @@ import CategoryFilter from './blogs/CategoryFilter';
 import NewsletterSignup from './blogs/NewsletterSignup';
 import { blogPosts, categories, getFeaturedPost, getRecentPosts } from '../components/data/blogData';
 
-const BlogsPage = () => {
-  const [activeCategory, setActiveCategory] = useState('all');
+
+const Blogspage = () => {
+
+
+const [activeCategory, setActiveCategory] = useState('all');
   const [filteredPosts, setFilteredPosts] = useState([]);
   const [searchResults, setSearchResults] = useState([]);
   const [isSearching, setIsSearching] = useState(false);
@@ -125,6 +128,7 @@ const BlogsPage = () => {
       
     </div>
   );
-};
+}
 
-export default BlogsPage;
+export default Blogspage
+

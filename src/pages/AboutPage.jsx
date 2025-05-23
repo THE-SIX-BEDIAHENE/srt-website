@@ -1,7 +1,6 @@
-import React from "react";
+import React from 'react'
 
-
-const AboutPage = () => {
+const Aboutpage = () => {
   return (
     <>
 <div className="relative w-full h-[40vh]">
@@ -186,6 +185,6 @@ const AboutPage = () => {
       </div>
     </>
   );
-};
+}
 
-export default AboutPage;
+export default Aboutpage

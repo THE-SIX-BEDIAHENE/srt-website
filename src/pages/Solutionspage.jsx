@@ -303,7 +303,7 @@ const projects = [
   }
 ];
 
-function SolutionPage() {
+function Solutionpage() {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
   const activeContent = tabs.find(tab => tab.id === activeTab);
 
@@ -548,7 +548,7 @@ function SolutionPage() {
   );
 }
 
-export default SolutionPage;
+export default Solutionpage;
 
 
 // import React from "react";
