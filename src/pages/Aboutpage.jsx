@@ -155,7 +155,7 @@ const AboutPage = () => {
                 className="w-full object-contain"
               />
               <div className="p-4 text-center">
-                <h3 className="font-bold text-xl">Femi Banigbe</h3>
+                <h3 className="font-bold text-xl text-blue-800">Femi Banigbe</h3>
                 <p className="text-gray-600">Managing Director</p>
               </div>
             </div>
@@ -166,7 +166,7 @@ const AboutPage = () => {
                 className="w-full  object-contain"
               />
               <div className="p-4 text-center">
-                <h3 className="font-bold text-xl">Raphael Richardo Emanuel</h3>
+                <h3 className="font-bold text-xl text-blue-800">Raphael Richardo Emanuel</h3>
                 <p className="text-gray-600">EVP Head of Operations</p>
               </div>
             </div>
@@ -177,7 +177,7 @@ const AboutPage = () => {
                 className="w-full  object-contain"
               />
               <div className="p-4 text-center">
-                <h3 className="font-bold text-xl">Abolaji Idowu</h3>
+                <h3 className="text-blue-800 font-bold text-xl">Abolaji Idowu</h3>
                 <p className="text-gray-600">EVP Finance and Global Strategy</p>
               </div>
             </div>
