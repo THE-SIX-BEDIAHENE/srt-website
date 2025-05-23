@@ -216,7 +216,7 @@ import BusinessFocus from "./home/sections/BusinessFocus";
 import Project from "./home/sections/Project";
 import Contact from "./home/sections/Contact";
 
-const Homepage = () => {
+const HomePage = () => {
   return (
     <div className="font-sans flex flex-col items-center justify-center w-full min-h-screen overflow-hidden">
       <Hero />
@@ -229,4 +229,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default HomePage;

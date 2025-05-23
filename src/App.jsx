@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Homepage from "./pages/Homepage.jsx";
+import HomePage from "./pages/Homepage.jsx";
 import AboutPage from "./pages/Aboutpage.jsx";
-import Contactpage from "./pages/Contactpage.jsx";
-import Solutionspage from "./pages/Solutionspage.jsx";
-import Blogspage from "./pages/Blogspage.jsx";
-import Careerspage from "./pages/Careerspage.jsx";
+import ContactPage from "./pages/ContactPage.jsx";
+import SolutionsPage from "./pages/SolutionsPage.jsx";
+import BlogsPage from "./pages/BlogsPage.jsx";
+import CareersPage from "./pages/CareersPage.jsx";
 import RootLayout from "./layouts/RootLayout";
 function App() {
   return (
@@ -13,12 +13,12 @@ function App() {
       <BrowserRouter>
         <Routes>
         <Route path="/" element={<RootLayout />}>
-          <Route path="/" element={<Homepage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<Contactpage />} />
-          <Route path="/solutions" element={<Solutionspage />} />
-          <Route path="/blogs" element={<Blogspage />} />
-          <Route path="/careers" element={<Careerspage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/solutions" element={<SolutionsPage />} />
+          <Route path="/blogs" element={<BlogsPage />} />
+          <Route path="/careers" element={<CareersPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
