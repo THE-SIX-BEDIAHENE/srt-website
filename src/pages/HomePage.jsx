@@ -202,6 +202,7 @@
 // export default Homepage;
 
 
+
 import { 
   ChevronRight, 
   BarChart3, 
@@ -216,7 +217,7 @@ import BusinessFocus from "./home/sections/BusinessFocus";
 import Project from "./home/sections/Project";
 import Contact from "./home/sections/Contact";
 
-const HomePage = () => {
+const Homepage = () => {
   return (
     <div className="font-sans flex flex-col items-center justify-center w-full min-h-screen overflow-hidden">
       <Hero />
@@ -227,6 +228,8 @@ const HomePage = () => {
       <Contact />
     </div>
   );
-};
+}
 
-export default HomePage;
+export default Homepage
+
+

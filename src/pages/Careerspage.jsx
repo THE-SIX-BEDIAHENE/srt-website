@@ -4,11 +4,13 @@ import { OpportunitySection } from './career/OpportunitySection';
 import { jobs } from '../components/data/jobs';
 import { CompanyCulture } from './career/CompanyCulture';
 import { EmployeeTestimonials } from './career/Team';
+const Careerspage = () => {
 
-const CareersPage = () => {
-  const internships = jobs.filter(job => job.type === 'internship');
+const internships = jobs.filter(job => job.type === 'internship');
   const apprenticeships = jobs.filter(job => job.type === 'apprenticeship');
   const fullTime = jobs.filter(job => job.type === 'full-time');
+
+
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -46,6 +48,6 @@ const CareersPage = () => {
       </main>
     </div>
   );
-};
+}
 
-export default CareersPage;
+export default Careerspage
