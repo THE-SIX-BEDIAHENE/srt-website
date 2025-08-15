@@ -3,7 +3,6 @@ import { Menu, X } from "lucide-react";
 import logo from "/logo.png";
 import { Link, useLocation } from "react-router-dom";
 
-
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -18,10 +17,10 @@ const Navbar = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -30,29 +29,50 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`fixed w-full z-50 transition-all duration-300 ${
-      scrolled 
-        ? 'bg-white/95 backdrop-blur-sm shadow-md py-1' 
-        : 'bg-transparent py-4'
-    }`}>
+    <div
+      className={`fixed w-full z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-white/95 backdrop-blur-sm shadow-md py-1"
+          : "bg-transparent py-4"
+      }`}
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-5">
         <div className="flex justify-between items-center h-16 px-4 md:px-1">
           {/* Logo Section */}
-          <div className="flex items-center gap-1">
-     <img src={logo} width={60} alt="Logo" />
-     <span className={`text-xl md:block font-bold ${scrolled ? 'text-blue-900' : 
-      location.pathname ==="/about" ? "text-white" :
-      'text-gray'}`}>
-       ilverRock
-     </span>
-     <span className={`font-semibold  text-xs ${scrolled ? 'text-black' : 'text-blue-900'}`}>Technology</span>
-  </div>
+          <div className="flex items-center gap-1.5">
+            <img src={logo} width={60} alt="Logo" />
+            <span
+              className={`text-xl md:block font-bold ${
+                scrolled
+                  ? "text-blue-900"
+                  : location.pathname === "/about"
+                  ? "text-white"
+                  : "text-gray"
+              }`}
+            >
+              SilverRock 
+            </span>
+            <span
+              className={`font-bold text-xl  ${
+                scrolled ? "text-black" : "text-blue-900"
+              }`}
+            >
+              Technology
+            </span>
+          </div>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex gap-8 items-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-800 to-blue-800">
-            {['Home', 'About', 'Solutions', 'Careers', 'Blogs', 'Contact'].map((item) => (
-              <NavLink key={item} title={item} scrolled={scrolled} path={location.pathname} />
-            ))}
+            {["Home", "About", "Solutions", "Careers", "Blogs", "Contact"].map(
+              (item) => (
+                <NavLink
+                  key={item}
+                  title={item}
+                  scrolled={scrolled}
+                  path={location.pathname}
+                />
+              )
+            )}
             {/* <button className="px-5 py-2 bg-blue-700 hover:bg-blue-800 text-white rounded-full transition-all duration-300 text-sm font-semibold">
               Get in Touch
             </button> */}
@@ -64,9 +84,11 @@ const Navbar = () => {
               onClick={toggleMenu}
               type="button"
               className={`transition-colors duration-300 ${
-                scrolled ? 'text-blue-800' : 
-                location.pathname === "/about" ? "text-white" : 
-                "text-gray-800"
+                scrolled
+                  ? "text-blue-800"
+                  : location.pathname === "/about"
+                  ? "text-white"
+                  : "text-gray-800"
               } hover:text-blue-700 focus:outline-none`}
               aria-label="Toggle menu"
             >
@@ -77,15 +99,27 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden bg-white/95 backdrop-blur-sm text-gray-800 overflow-hidden transition-all duration-300 ease-in-out ${
-        menuOpen ? 'max-h-[400px] py-4 shadow-lg opacity-100' : 'max-h-0 py-0 opacity-0'
-      }`}>
+      <div
+        className={`md:hidden bg-white/95 backdrop-blur-sm text-gray-800 overflow-hidden transition-all duration-300 ease-in-out ${
+          menuOpen
+            ? "max-h-[400px] py-4 shadow-lg opacity-100"
+            : "max-h-0 py-0 opacity-0"
+        }`}
+      >
         <div className="px-6 space-y-4 ">
-          {['Home', 'About', 'Solutions', 'Careers', 'Blogs', 'Contact'].map((item) => (
-            <Link key={item}to={`/${item.toLowerCase() === 'home' ? '' : item.toLowerCase()}`} className="block py-2 text-lg font-semibold hover:text-blue-700 transition-colors">
-              {item}
-            </ Link>
-          ))}
+          {["Home", "About", "Solutions", "Careers", "Blogs", "Contact"].map(
+            (item) => (
+              <Link
+                key={item}
+                to={`/${
+                  item.toLowerCase() === "home" ? "" : item.toLowerCase()
+                }`}
+                className="block py-2 text-lg font-semibold hover:text-blue-700 transition-colors"
+              >
+                {item}
+              </Link>
+            )
+          )}
           {/* <button className="w-full py-3 mt-4 bg-blue-700 hover:bg-blue-800 text-white rounded-lg transition-all duration-300 text-sm font-semibold">
             Get in Touch
           </button> */}
@@ -97,7 +131,8 @@ const Navbar = () => {
 
 const NavLink = ({ title, scrolled, path }) => {
   const isAboutPage = path === "/about"; // 👈 Check if on About page
-  const basePath = title.toLowerCase() === "home" ? "/" : `/${title.toLowerCase()}`;
+  const basePath =
+    title.toLowerCase() === "home" ? "/" : `/${title.toLowerCase()}`;
 
   return (
     <Link
@@ -116,8 +151,6 @@ const NavLink = ({ title, scrolled, path }) => {
 };
 
 export default Navbar;
-
-
 
 // import { useState, useEffect } from "react";
 // import { FiMenu, FiX } from "react-icons/fi";
@@ -148,7 +181,6 @@ export default Navbar;
 //     setMenuOpen(!menuOpen);
 //   };
 
-
 //   return (
 //     <div className={`fixed w-full font-[Urbanist] z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-1' : 'bg-transparent py-4'
 //       }`}>
@@ -156,7 +188,7 @@ export default Navbar;
 //       <div className="container mx-auto px-4 sm:px-6 lg:px-5">
 
 //         <div className="flex justify-between items-center h-20 px-4 md:px-1">
-        
+
 //   {/* Logo Section */}
 //   <div className="flex items-center gap-1">
 //     <img src={logo} width={50} alt="Logo" />

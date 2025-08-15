@@ -18,16 +18,16 @@ const Aboutpage = () => {
         {/* Header */}
         
         <header className="flex flex-col lg:flex-row items-center justify-between gap-10 w-full max-w-6xl">
-  <div className="w-full lg:w-1/2 text-center lg:text-left space-y-4 bg-white p-6 rounded-xl">
-    <h1 className="text-6xl sm:text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-gray-800 to-blue-800 font-bold">
+  <div className="w-full lg:w-1/2 text-center lg:text-left  bg-white p-6 rounded-xl">
+    <h1 className="text-6xl flex  items-center h-15 sm:text-4xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-gray-800 to-blue-800 font-bold">
       Silver Rock Technology
     </h1>
-            <p className="text-base sm:text-lg md:text-xl pt-2">
+            <p className="text-base sm:text-lg md:text-xl ">
               We are a management advisory and execution support firm
               specializing in telecoms, media, and digital industries. Our goal
               is to be the leading advisory firm in Africa and emerging markets,
               delivering strategic insights, technical expertise, financial
-              acumen, and operational excellence—all backed by end-to-end
+              acumen, and operational excellence all backed by end-to-end
               execution support for our clients.
             </p>
             <p className="text-base sm:text-lg md:text-xl">

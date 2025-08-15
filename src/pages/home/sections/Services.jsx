@@ -95,7 +95,7 @@ const Services = () => {
                   <h3 className="text-xl font-bold text-gray-900">{service.title}</h3>
                 </div>
 
-                {/* Features */}
+                {/* Features
                 <ul className="space-y-2 mb-4">
                   {service.features.map((feature, index) => (
                     <li key={index} className="flex items-center gap-2 text-gray-600">
@@ -103,20 +103,14 @@ const Services = () => {
                       {feature}
                     </li>
                   ))}
-                </ul>
+                </ul> */}
 
                 {/* Learn More Button */}
-                <button className={`mt-4 px-4 py-2 rounded-lg text-sm transition-all duration-300 ${
-                  activeService === service.id
-                    ? 'bg-blue-900 text-white'
-                    : 'bg-blue-50 text-blue-900 group-hover:bg-blue-800 group-hover:text-white'
-                }`}>
-                  Learn More
-                </button>
+              
               </div>
 
               {/* Background Pattern */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-50"></div>
+              <div className="absolute inset-0 cursor-pointer"></div>
             </div>
           ))}
         </div>
