@@ -3,10 +3,10 @@ import "./App.css";
 import RootLayout from "./layouts/RootLayout";
 import Aboutpage from "./pages/AboutPage.jsx";
 import Contactpage from "./pages/Contactpage.jsx";
-import Careerspage from "./pages/CareersPage.jsx";
-import Blogspage from "./pages/BlogsPage.jsx";
+import Careerspage from "./pages/Careerspage.jsx";
+import Blogspage from "./pages/Blogspage.jsx";
 import Homepage from "./pages/HomePage.jsx";
-import Solutionpage from "./pages/SolutionsPage.jsx";
+import Solutionpage from "./pages/Solutionspage.jsx";
 function App() {
   return (
     <>
