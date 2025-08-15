@@ -1,12 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import SolutionsPage from "./pages/SolutionsPage.jsx";
 import RootLayout from "./layouts/RootLayout";
 import Aboutpage from "./pages/AboutPage.jsx";
 import Contactpage from "./pages/ContactPage.jsx";
 import Careerspage from "./pages/CareersPage.jsx";
 import Blogspage from "./pages/BlogsPage.jsx";
 import Homepage from "./pages/HomePage.jsx";
+import Solutionpage from "./pages/SolutionsPage.jsx";
 function App() {
   return (
     <>
@@ -16,7 +16,7 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<Aboutpage />} />
           <Route path="/contact" element={<Contactpage />} />
-          <Route path="/solutions" element={<SolutionsPage />} />
+          <Route path="/solutions" element={<Solutionpage />} />
           <Route path="/blogs" element={<Blogspage />} />
           <Route path="/careers" element={<Careerspage />} />
           </Route>
